@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<link rel="shortcut icon" href="icon.png">
+	<title>Biblioteca</title>
+<header>
+     <img class="nome" src="nome.png">
+     <img class="imagem" src="icon2.png">
+     
+</header>
+
+<script>
+function definePainel(){
+    var obj= event.target;
+    var painel=document.getElementById("painel");
+    painel.innerHTML="Título: " + obj.dataset.título+"<br>"; 
+    painel.innerHTML+="Autor: " + obj.dataset.autor+"<br>";
+    painel.innerHTML+="Categoria: " + obj.dataset.categoria+"<br>";
+    painel.innerHTML+="Nota: " + obj.dataset.nota;
+    
+   
+}
+
+function inicia(){
+    document.getElementById("l1").addEventListener("click",definePainel);
+    document.getElementById("l2").addEventListener("click",definePainel);
+    document.getElementById("l3").addEventListener("click",definePainel);
+    document.getElementById("l4").addEventListener("click",definePainel);
+    document.getElementById("l5").addEventListener("click",definePainel);
+    document.getElementById("l6").addEventListener("click",definePainel);
+    document.getElementById("l7").addEventListener("click",definePainel);
+    document.getElementById("l8").addEventListener("click",definePainel);
+    document.getElementById("l9").addEventListener("click",definePainel);
+}
+window.addEventListener("load", inicia);
+</script>
+
+</head> 
+<body>
+   
+<div id="painel">Sobre</div>
+<div id="catálogo"></div>
+
+    <div id="l1" class="livros"><img src="livro1.jpg" data-título= "Guerra nas estrelas" data-autor="George Lucas" data-categoria="ficção científica" data-nota="8"></div>
+    <div id="l2" class="livros"><img src="livro2.jpg" data-título="1808" data-autor="Laurentino Gomes" data-categoria="História do Brasil" data-nota="8" ></div>
+    <div id="l3" class="livros"><img src="livro3.jpg" data-título="Verity" data-autor="Collen Hoover" data-categoria="Suspense" data-nota="10" ></div>
+    <div id="l4" class="livros"><img src="livro4.jpg" data-título="O diário de Anne Frank" data-autor="Anne Frank" data-categoria="Segunda Guerra Mundial" data-nota="10"></div>
+    <div id="l5" class="livros"><img src="livro5.jpg" data-título="Orgulho e Preconceito" data-autor="Jane Austen" data-categoria="Romance" data-nota="10"></div>
+    <div id="l6" class="livros"><img src="livro6.jpg" data-título="It: a Coisa" data-autor="Stephen King" data-categoria="terror" data-nota="6"></div>
+    <div id="l7" class="livros"><img src="livro7.jpg" data-título="Harry Potter" data-autor="J K Rowling" data-categoria="Fantasia" data-nota="8"></div>
+    <div id="l8" class="livros"><img src="livro8.jpg" data-título="Catarina,a Grande" data-autor="Robert K. Massie" data-categoria="Biografia" data-nota="10"></div>
+    <div id="l9" class="livros"><img src="livro9.jpg" data-título="Dom Casmurro" data-autor="Machado de Assis" data-categoria="Literatura Brasileira" data-nota="10"></div>
+
+
+
+</body>
+<footer>Biblioteca</footer>
+</html>  

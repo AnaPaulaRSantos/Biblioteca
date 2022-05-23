@@ -1,0 +1,49 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+body{
+    background-color: antiquewhite;
+}
+
+header{
+    background-color: rgb(247, 207, 154);
+    width: 100%;
+    height: 250px;
+}
+.nome{
+    margin-top: -35px;
+    margin-left: 50px;
+    width:800px ;
+}
+.imagem{
+    float: right;
+    width:600px;
+    height: 450px;
+    margin-top: 5px;
+    margin-right:100px;
+}
+#painel{
+    background-color: rgb(249, 249, 249);
+    border: solid 3px rgb(247, 207, 154);  ;
+    width: 300px;
+    height: 150px;
+    border-radius: 10px;
+    margin: 20px;
+    padding-top: 30px;
+    font-size: 20px;
+    text-align: center;
+}
+.livros{
+    display: inline;
+    margin: 50px;
+}
+
+footer{
+   margin-top: 10px;
+   padding: 10px;
+   text-align: center;
+
+    background-color: rgb(237, 211, 172);
+    color: rgb(33, 32, 32);
+}
